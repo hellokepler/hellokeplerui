@@ -1,0 +1,51 @@
+table {
+  width: 100% !important;
+  // margin-bottom:500px;
+  // height: 50% !important;
+  justify-content: center;
+  // transform:rotate(90deg);  
+}
+
+td, th {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+::ng-deep .mat-datepicker-content .mat-calendar{
+  width: 10px !important;
+  height: 100px !important;
+}
+// .mat-form-field {
+//   font-size: 20px;
+//   width: 100%;
+// }
+
+.mat-row
+{ height: 40px !important;
+  justify-content: center;
+ } 
+
+ .mat-cell{
+ justify-content: center
+ }
+// .mat-row{ min-height: 10px; }
+
+
+
+
+#container{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+padding-top: 10px;
+padding-right: 10px;
+
+}
+// ::ng-deep .mat-datepicker-content .mat-calendar {
+//   width: 20px!important;
+//   height: 20px!important;
+// }
+
+.md-datepicker-button.md-icon-button {
+  display: none;
+}

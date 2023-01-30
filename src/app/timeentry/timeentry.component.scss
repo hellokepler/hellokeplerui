@@ -1,0 +1,47 @@
+table {
+    width: 100% !important;
+    // margin-bottom:500px;
+    // height: 50% !important;
+  }
+   
+  
+  td, th {
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+  
+  .mat-sort-header-container {
+    justify-content: center !important;
+  }
+  mat-row.mat-row.ng-star-inserted 
+  { height: 40px !important; } 
+  
+
+  
+  
+  
+  #container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+ 
+
+.mat-row:hover .mat-cell{
+    background-color: #fff5a2;
+} 
+.mat-row:nth-child(even){
+  background-color:rgb(219, 217, 217);
+}
+      
+.mat-row:nth-child(odd){
+  background-color:white;
+}
+
+.mat-cell:nth-child(even){
+  background-color:lightgray;
+}
+
+
+
+

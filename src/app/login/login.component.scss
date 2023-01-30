@@ -1,0 +1,66 @@
+
+  #container{    
+    display: flex;
+    justify-content: space-between;
+    height: 30px;   
+}
+
+ #left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50%;
+    padding-left: 10px;
+    flex-wrap: wrap;    
+    flex-grow: 1;  
+    font-size: 20em;
+ }
+ 
+ #right {       
+    padding: 4px;
+    text-align: right;
+    justify-content: flex-end;
+    align-items: flex-end;       
+ }
+
+.login-form-flex {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;  
+    border-radius: 5em;  
+    // background-image: conic-gradient(yellow, green);
+    // background-image: url('paper.gif');
+    background-size: cover;
+    background: linear-gradient(to bottom left, cyan 50%, palegoldenrod 50%),
+    url("/assets/hellokeplerlogo.png");
+    // background: url("/assets/hellokeplerlogo.png"); 
+    // background-image:
+    // linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+    // url("/assets/hellokeplerlogo.gif");
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+    // overflow: hidden;
+     
+  }
+  
+  .button-flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+
+.form-group{
+    margin-top: 20px;
+}
+
+.matcard{  
+    margin-top: 10%;
+    background-color:rgb(32, 196, 100);
+    height: 50%;
+    max-width: 50%;
+    vertical-align: middle;
+}

@@ -1,0 +1,57 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+    <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef> Date </th>
+        <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="training">
+        <th mat-header-cell *matHeaderCellDef> Training </th>
+        <td mat-cell *matCellDef="let element">
+
+            <mat-form-field appearance="outline">
+                <input matInput [value]="element.training">
+            </mat-form-field>
+        </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="work">
+        <th mat-header-cell *matHeaderCellDef> Work </th>
+        <td mat-cell *matCellDef="let element">
+            <mat-form-field appearance="outline">
+                <input matInput [value]="element.work">
+            </mat-form-field>
+        </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="pto">
+        <th mat-header-cell *matHeaderCellDef> PTO </th>
+        <td mat-cell *matCellDef="let element">
+            <mat-form-field appearance="outline">
+                <input matInput [value]="element.pto">
+            </mat-form-field>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="holiday">
+        <th mat-header-cell *matHeaderCellDef> Holiday </th>
+        <td mat-cell *matCellDef="let element">
+            <mat-form-field appearance="outline">
+                <input matInput [value]="element.holiday">
+            </mat-form-field>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="totalHours">
+        <th mat-header-cell *matHeaderCellDef> Total hours </th>
+        <td mat-cell *matCellDef="let element"> {{element.totalHours}}
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
